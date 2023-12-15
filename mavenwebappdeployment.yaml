@@ -16,9 +16,12 @@ spec:
       labels:
         app: mavenwebapp
     spec:
+      imagePullSecrets:
+      - name: regcred
       containers:
         - name: mavenwebappcontainer
           image: 323725114371.dkr.ecr.ap-south-1.amazonaws.com/maven-web-application:${BUILD_NUMBER}
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           resources:
