@@ -17,7 +17,7 @@ spec:
         app: mavenwebapp
     spec:
       imagePullSecrets:
-      - name: my-registry-key
+      - name: ecr-registry
       containers:
         - name: mavenwebappcontainer
           image: 323725114371.dkr.ecr.us-east-1.amazonaws.com/maven-web-application:{{BUILD_NUMBER}}
