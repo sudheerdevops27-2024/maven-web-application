@@ -20,7 +20,7 @@ spec:
       - name: my-registry-key
       containers:
         - name: mavenwebappcontainer
-          image: 323725114371.dkr.ecr.us-east-1.amazonaws.com/spring-boot-mongo:{{BUILD_NUMBER}}
+          image: 323725114371.dkr.ecr.us-east-1.amazonaws.com/maven-web-application:{{BUILD_NUMBER}}
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
