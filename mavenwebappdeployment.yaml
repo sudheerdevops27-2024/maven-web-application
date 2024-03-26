@@ -17,10 +17,10 @@ spec:
         app: mavenwebapp
     spec:
       imagePullSecrets:
-      - name: ecr-registry-two
+      - name: maven-secret
       containers:
         - name: mavenwebappcontainer
-          image: 323725114371.dkr.ecr.us-east-1.amazonaws.com/maven-web-application:{{BUILD_NUMBER}}
+          image: 961917843589.dkr.ecr.ap-south-1.amazonaws.com/maven-web-application:{{BUILD_NUMBER}}
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
