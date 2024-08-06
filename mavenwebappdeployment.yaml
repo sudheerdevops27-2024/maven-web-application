@@ -20,7 +20,7 @@ spec:
       - name: maven-secret
       containers:
         - name: mavenwebappcontainer
-          image: 730335214039.dkr.ecr.ap-south-1.amazonaws.com/maven-web-application:{{BUILD_NUMBER}}
+          image: dockerlearning2022/maven-web-application:{{BUILD_NUMBER}}
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
