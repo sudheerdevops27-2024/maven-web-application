@@ -20,7 +20,7 @@ spec:
       - name: maven-secret
       containers:
         - name: mavenwebappcontainer
-          image: dockerlearning2022/maven-web-application:{{BUILD_NUMBER}}
+          image: dockerlearning2022/maven-web-application:11
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
